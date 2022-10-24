@@ -1,0 +1,7 @@
+{
+  "name": "be_productive",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
