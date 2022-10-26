@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar color="tertiary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>BeProductive
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list color="tertiary">
+    <ion-item color="tertiary">
+      <ion-avatar slot="start">
+        <img src="https://www.legnanonews.com/archivio/img/news/9F694F84-978A-205B-5308C3657ED63F83.jpeg">
+      </ion-avatar>
+      <ion-lable>
+        <h1>CiccioGamer89</h1>
+        <p>youtuber</p>
+      </ion-lable>
+    </ion-item>
+  </ion-list>
+
+    <app-events-card status="Visita medica" updatedAt="25/04/2021 16:29" createdAt="24/04/2021" notes="prima nota">
+      <ion-card-header head>
+        <ion-card-subtitle color="tertiary">Eventi in programma</ion-card-subtitle>
+      </ion-card-header>
+      <ion-button color="tertiary" fill="clear" size="full" footer (click)="events()">See all...</ion-button>
+    </app-events-card>
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button color="tertiary">
+      <ion-icon name="add" (click)="newevents()"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>

@@ -1,0 +1,87 @@
+<ion-header>
+  <ion-toolbar color="tertiary">
+    <ion-buttons slot="start">
+      <ion-back-button title=""></ion-back-button>
+    </ion-buttons>
+    <ion-title>Registrazione</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title color="tertiary">Ti può essere utile quest'app?</ion-card-title>
+    </ion-card-header>
+
+    <ion-list>
+      <ion-radio-group value="strawberries">
+        <ion-item>
+          <ion-label>Si</ion-label>
+          <ion-radio slot="end" value="yes"></ion-radio>
+        </ion-item>
+        
+        <ion-item>
+          <ion-label>No</ion-label>
+          <ion-radio slot="end" value="no"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title color="tertiary">Dati</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item>
+        <ion-label position="floating" color="tertiary">Nome</ion-label>
+        <ion-input type="text" color="tertiary"></ion-input>
+      </ion-item>  
+      <ion-item>
+        <ion-label position="floating" color="tertiary">Cognome</ion-label>
+        <ion-input type="text" color="tertiary"></ion-input>
+      </ion-item> 
+      <ion-item>
+        <ion-label position="floating" color="tertiary">Email</ion-label>
+        <ion-input type="email" color="tertiary"></ion-input>
+      </ion-item> 
+      <ion-item>
+        <ion-label position="floating" color="tertiary">Password</ion-label>
+        <ion-input type="password" color="tertiary"></ion-input>
+      </ion-item> 
+      <ion-item>
+        <ion-label position="floating" color="tertiary">Conferma password</ion-label>
+        <ion-input type="password" color="tertiary"></ion-input>
+      </ion-item> 
+      <ion-item>
+        <ion-label position="floating" color="tertiary">Numero di telefono</ion-label>
+        <ion-input type="tel" color="tertiary"></ion-input>
+      </ion-item> 
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+    <ion-card-title>Indirizzo</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item>
+        <ion-label position="floating" color="tertiary">Città</ion-label>
+        <ion-input type="text" color="tertiary"></ion-input>
+      </ion-item> 
+      <ion-item>
+        <ion-label position="floating" color="tertiary">CAP</ion-label>
+        <ion-input type="tel" color="tertiary"></ion-input>
+      </ion-item> 
+      <ion-item>
+        <ion-label position="floating" color="tertiary">Indirizzo</ion-label>
+        <ion-input type="text" color="tertiary"></ion-input>
+      </ion-item> 
+      <ion-item>
+        <ion-label position="floating" color="tertiary">N°</ion-label>
+        <ion-input type="tel" color="tertiary"></ion-input>
+      </ion-item> 
+    </ion-card-content>
+  </ion-card>
+  <ion-button color="warning" shape="round" size="full" (click)="register()">Registrati</ion-button>
+</ion-content>
